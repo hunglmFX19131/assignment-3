@@ -1,0 +1,298 @@
+@media screen and (min-width: 992px) {
+  * {
+    margin: 0px;
+  }
+  body {
+    margin: 5px;
+  }
+  /* phần header */
+  #banner {
+    position: relative;
+  }
+  .bg-img {
+    background-image: url(../images/banner.jpg);
+    width: cover;
+    height: 50vh;
+    position: absolute;
+  }
+  .content-banner {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+  .img1 {
+    width: 70px;
+    height: 96px;
+    border-radius: 50%;
+    border: 5px solid white;
+    margin-left: 80px;
+    margin-right: 80px;
+  }
+  #nav-bar {
+    text-transform: uppercase;
+  }
+  #nav-bar .container-fluid {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  #nav-bar a {
+    border-left: 1px solid rgba(0, 0, 0, 0.3);
+    border-right: 1px solid rgba(0, 0, 0, 0.3);
+  }
+  #target {
+    background-color: #e9ecef;
+  }
+  #personal-info {
+    background-color: #ced4da;
+  }
+  a {
+    color: #495057;
+  }
+  a:link {
+    text-decoration: none;
+    color: #495057;
+  }
+  a:hover {
+    color: #f50a0a;
+  }
+  .icon {
+    color: #4263eb;
+    cursor: pointer;
+  }
+  .info {
+    list-style: none;
+  }
+  /* phần about */
+  #about .container-fluid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  /* phần job-info  */
+  #job-info .container-fluid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 0px;
+  }
+  /* đặt vị trí cho Kinh Nghiệm */
+  #job-info .container .content1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  /* chọn vị trí cho Kỹ năng */
+  #job-info .container-fluid .content2 {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+
+  /* chọn vị trí cho ngôn ngữ  */
+  #job-info .container-fluid .content3 {
+    grid-column: 3/4;
+    grid-row: 1/2;
+  }
+  /* chọn vị trí cho hoạt động  */
+  #job-info .container-fluid .content4 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  /* chọn vị trí cho học vấn  */
+  #job-info .container-fluid .content5 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+  /* chọn vị trí cho sở thích  */
+  #job-info .container-fluid .content6 {
+    grid-column: 3/4;
+    grid-row: 2/3;
+  }
+  .content {
+    position: relative; /*đặt giá trị này để icon được nằm đúng vị trí trong hộp */
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    /* font-size: 14px; */
+  }
+  /* xóa dấu của danh sách */
+  #job-info ul {
+    list-style: none;
+  }
+  /* tạo lại dấu tròn xanh */
+  #job-info ul li:before {
+    content: "";
+    position: absolute;
+    border: 4px solid #22b8cf;
+    border-radius: 50%;
+    margin-left: -28px;
+    margin-top: 10px;
+  }
+  /* tạo lại dấu gạch đầu dòng */
+  #job-info ul ul li:before {
+    content: "-";
+    position: relative; /*đặt giá trị này để không bị chữ đè lên */
+    border: none;
+    /* border-radius: 50%; */
+    margin-left: -36px;
+    margin-top: 0px;
+  }
+  /* thiết kế và đặt vị trí cho icon  */
+  .icon1 {
+    color: rgba(0, 0, 0, 0.4);
+    font-size: 42px;
+    position: absolute;
+    right: 5%;
+    top: 30px;
+  }
+  #job-info h3 {
+    font-weight: 500;
+    font-size: 16px;
+    color: black;
+    margin-top: 40px;
+  }
+  #job-info h1 {
+    font-weight: 400;
+    font-size: 36px;
+    color: black;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    margin-left: 10px;
+  }
+  /* tạo kiểu cho chữ "hiện tại" */
+  .now {
+    background-color: #22b8cf;
+    border-radius: 50px/50px;
+    color: #f7f7f7;
+    padding: 2px 12px 2px 12px;
+  }
+  /* tạo dấu gạch chân */
+  span {
+    background: #dee2e6;
+    display: inline-block;
+    height: 2px;
+    margin-right: 10px;
+    width: 45px;
+  }
+  .underline1 {
+    background: #22b8cf;
+  }
+  .underline3 {
+    background: #dee2e6;
+  }
+  #skill-2 .underline2 {
+    background: #22b8cf;
+  }
+  #skill-3 .underline2 {
+    background: #22b8cf;
+  }
+  #lang-1 .underline2 {
+    background: #22b8cf;
+  }
+  /* thiết kế icon cho mục sở thích */
+  .icon3 {
+    width: 20px;
+    height: 20px;
+    color: #3bc9db;
+    padding: 18px;
+    border: 1px solid #3bc9db;
+    border-radius: 50%;
+    box-sizing: content-box !important;
+  }
+  /* dùng bảng để sắp xếp bố cục Sở thích */
+  table {
+    text-align: center;
+    vertical-align: auto;
+    border-spacing: 10px;
+    border-collapse: separate !important;
+  }
+
+  /* phần chứng chỉ-giải thưởng */
+  .certificate-container {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+  /* chỉnh sửa ảnh */
+  .certificate1 img {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 250px;
+    height: 150px;
+  }
+  /* tạo đường viền ở giữa không nối liền với đường viền dưới  */
+  .border-img {
+    border-left: 1px solid #d6c08d;
+    padding-left: 15px;
+  }
+  /* tạo gạch đầu dòng cho mục chứng chỉ giải thưởng */
+  .certificate1 ul {
+    list-style: none;
+  }
+  .certificate1 ul li:before {
+    content: "-";
+    position: relative; /*đặt giá trị này để không bị chữ đè lên */
+    border: none;
+    /* border-radius: 50%; */
+    margin-left: -36px;
+    margin-top: 0px;
+  }
+  /* tạo đường viền  */
+  .certificate1 {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid #d6c08d; /*tạo đường viền dưới */
+  }
+  /* xóa đường viền của phần cuối */
+  .border-none {
+    border-bottom: none;
+  }
+  #certificate h3 {
+    margin-bottom: 10px;
+  }
+  /* phần dự án */
+  #project .container-fluid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr auto;
+    gap: 10px;
+  }
+  #project .container-fluid .section-title {
+    grid-row: 1/2;
+    grid-column: 1/4;
+  }
+  #project img {
+    width: 100%;
+    height: auto;
+  }
+  .row-border {
+    border: 1px solid rgba(0, 0, 0, 0.3);
+  }
+  .row-border-icon {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+  .border-2021 {
+    background-color: #22b8cf;
+    width: 60px;
+    height: 30px;
+    border-radius: 50px/50px;
+    padding-left: 12px;
+    color: #f8f9fa;
+  }
+  #project h3 {
+    text-transform: uppercase;
+  }
+  /* phần footer */
+  .icon4 {
+    color: #f7f7f7;
+    border: 1px solid #339af0;
+    padding: 5px;
+    width: 20%;
+    height: 20%;
+    font-size: 130%;
+    background-color: #339af0;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+}
